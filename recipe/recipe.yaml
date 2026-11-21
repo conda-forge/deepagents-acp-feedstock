@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.0.13"
+  version: 0.1.0
 
 package:
   name: deepagents-acp
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/d/deepagents-acp/deepagents_acp-${{ version }}.tar.gz
-    sha256: da356244275cb45c7d070144e3928b2096fda3501b6e58438a85da446ddf7889
+    sha256: bb6cc32da2ae20e7e4bd9e9202e4b1164cd84fe43b2697baf57874873cc1c751
   - url: https://raw.githubusercontent.com/langchain-ai/deepagents/refs/tags/deepagents-acp%3D%3D${{ version }}/LICENSE
     sha256: 4ec67e4ca6e6721dba849b2ca82261597c86a61ee214bbf21416006b7b2d0478
     file_name: LICENSE
@@ -26,7 +26,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - agent-client-protocol >=0.10.1
+    - agent-client-protocol >=1.0.0,<2.0.0
     - deepagents
     - python-dotenv >=1.2.2
 tests:
